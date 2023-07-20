@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Schibsted+Grotesk:wght@400;500;600&display=swap");
+/* -------------------------------------------------------------------------- */
+/*                           Defaults and Variables                           */
+/* -------------------------------------------------------------------------- */
+:root {
+  --bright: hsl(0, 0%, 95%);
+  --night: hsl(0, 0%, 25%);
+  --foreground-color: var(--night);
+  --background-color: var(--bright);
+  --fs-base: 16px;
+  --fs-a: 4.35rem;
+  --fs-b: 2.55rem;
+  --fs-c: 1.75rem;
+  --fs-d: var(--fs-base);
+  --lh-base: 1.5;
+  --lh-a: 1.2;
+  --lh-b: 1.25;
+  --lh-c: 1.3;
+  --lh-d: var(--lh-base);
+  --ls-base: 0em;
+  --ls-a: -0.035em;
+  --ls-b: -0.025em;
+  --ls-c: -0.015em;
+  --ls-d: var(--lh-base);
+  --fw-base: 400;
+  --fw-a: 600;
+  --fw-b: 600;
+  --fw-c: 500;
+  --fw-d: var(--lh-base);
+  --unit-base: var(--fs-base);
+  --unit-a: calc(var(--unit) * 4);
+  --unit-b: calc(var(--unit) * 2);
+  --unit-c: calc((var(--unit) / 2) * 3);
+  --unit-d: var(--unit-base);
+  --unit-e: calc(var(--unit) * 0.75);
+  --unit-f: calc(var(--unit) * 0.5);
+  font-family: "Schibsted Grotesk", "DM Sans", "Open Sans", "Inter", Helvetica, Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--foreground-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-base);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Mix-ins                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 Type Levels                                */
+/* -------------------------------------------------------------------------- */
+.typelvl-a {
+  font-size: var(--fs-a);
+  font-weight: var(--fw-a);
+  line-height: var(--lh-a);
+  letter-spacing: var(--ls-a);
+  margin-inline-start: -0.035em;
+}
+
+.typelvl-b {
+  font-size: var(--fs-b);
+  font-weight: var(--fw-b);
+  line-height: var(--lh-b);
+  letter-spacing: var(--ls-b);
+}
+
+.typelvl-c {
+  font-size: var(--fs-c);
+  font-weight: var(--fw-c);
+  line-height: var(--lh-c);
+  letter-spacing: var(--ls-c);
+}
+
+.overline {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Main                                    */
+/* -------------------------------------------------------------------------- */
+.main {
+  display: flex;
+}
+
+.sidebar {
+  width: clamp(200px, 15%, 300px);
+}
+
+.tuner-wrapper {
+  flex: 3 3 auto;
+}
+
+.tuner__section {
+  display: flex;
+}
+
+.t__settings {
+  flex: 3 3 60%;
+}
+
+.t__codeareas {
+  flex: 2 2 40%;
+}/*# sourceMappingURL=style.css.map */
