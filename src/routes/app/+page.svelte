@@ -19,15 +19,15 @@
 		<div class="t__settings">
 			<h2 class="tuner__heading typelvl-b">Settings</h2>
 			<div class="tuner__inputs">
-				<TunerSettings groupname="775643453455645677777">
+				<TunerSettings groupname="Base Information">
 					<Text id="slug" label="This is the input label..." />
 					<Text id="previewtext" label="What is your preview text?" />
+				</TunerSettings>
+
+				<TunerSettings groupname="Ask Customization">
 					<Dropdown id="hpc" label="What HPC level is needed?">
 						<Option options={['two', 'three', 'four']} />
 					</Dropdown>
-				</TunerSettings>
-
-				<TunerSettings groupname="Mone444tary">
 					<Text id="TESTGO44OD" label="TTESTY" />
 				</TunerSettings>
 			</div>
@@ -37,13 +37,13 @@
 				<h2 class="codearea__heading typelvl-b">Replace</h2>
 				<div class="code-wrapper">
 					<div class="input-card code-area">
-						<label class="typelvl-c" for="input">Input</label>
-						<textarea name="input" id="input" class="input" />
+						<label class="typelvl-c" for="inputBtn">Input</label>
+						<textarea name="inputBtn" id="inputText" class="inputText" />
 						<button id="inputBtn" class="inputBtn">Update my HTML</button>
 					</div>
 					<div class="output-card code-area">
-						<label class="typelvl-c" for="output">Output</label>
-						<textarea name="output" id="output" class="output" />
+						<label class="typelvl-c" for="outputBtn">Output</label>
+						<textarea name="output" id="outputText" class="outputText" />
 						<button id="outputBtn" class="outputBtn">Copy new HTML</button>
 					</div>
 				</div>
