@@ -3,5 +3,5 @@
 </script>
 
 {#each options as option}
-	<option value={option.toLowerCase()}>{option}</option>
+	<option value={option}>{option}</option>
 {/each}
