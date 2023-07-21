@@ -1,4 +1,4 @@
-<div class="container">
+<div class="first-wrapper">
 	<header class="header">
 		<span>CodeTuner</span>
 		<button>Logout</button>
