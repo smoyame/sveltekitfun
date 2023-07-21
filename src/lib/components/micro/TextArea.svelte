@@ -6,5 +6,5 @@
 
 <InputWrapper type="textarea">
 	<label for={id} class={'label--settings ls__' + id}>{label}</label>
-	<input type="textarea" name={id} {id} class={id + ' textarea'} value={label} />
+	<textarea name={id} {id} class={id + ' textarea'} />
 </InputWrapper>
