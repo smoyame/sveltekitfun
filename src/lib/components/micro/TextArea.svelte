@@ -5,6 +5,12 @@
 </script>
 
 <InputWrapper type="textarea">
-	<label for={id} class={'label--settings ls__' + id}>{label}</label>
+	<label for={id} class={'label--settings lsett__' + id}>{label}</label>
 	<textarea name={id} {id} class={id + ' textarea'} />
 </InputWrapper>
+
+<style>
+	textarea {
+		resize: none;
+	}
+</style>
