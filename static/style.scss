@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Schibsted+Grotesk:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Schibsted+Grotesk:wght@300;400;500;600&display=swap');
 
 /* -------------------------------------------------------------------------- */
 /*                           Defaults and Variables                           */
@@ -7,7 +7,7 @@
 :root {
 	--bright: hsl(0, 26%, 96%);
 	--night: hsl(269, 64%, 11%);
-	--pale: hsl(235, 21%, 89%);
+	--pale: hsl(236, 18%, 85%);
 	--accent: hsl(250, 82%, 49%);
 
 	--foreground-color: var(--night);
@@ -17,8 +17,8 @@
 	color: var(--foreground-color);
 
 	--fs-base: 16px;
-	--fs-a: 4.35rem;
-	--fs-b: 2.55rem;
+	--fs-a: 4.5rem;
+	--fs-b: 2.75rem;
 	--fs-c: 1.75rem;
 	--fs-d: var(--fs-base);
 
@@ -48,7 +48,8 @@
 	--unit-e: calc(var(--unit-base) * 0.75);
 	--unit-f: calc(var(--unit-base) * 0.5);
 
-	font-family: 'Schibsted Grotesk', 'DM Sans', 'Open Sans', 'Inter', Helvetica, Arial, sans-serif;
+	--ff-primary: 'Schibsted Grotesk', 'DM Sans', 'Open Sans', 'Inter', Helvetica, Arial, sans-serif;
+	font-family: var(--ff-primary);
 
 	--radius-a: 1rem;
 	--radius-b: 0.5rem;
@@ -91,27 +92,58 @@ fieldset {
 .typelvl-a {
 	@include typelvl(a);
 	margin-inline-start: -0.035em;
-	margin-bottom: var(--unit-a);
+	margin-block-end: var(--unit-a);
 }
 
 .typelvl-b {
 	@include typelvl(b);
-	margin-bottom: var(--unit-b);
+	margin-block-end: var(--unit-b);
 }
 
 .typelvl-c {
 	@include typelvl(c);
-	margin-bottom: var(--unit-d);
+	margin-block-end: var(--unit-d);
 }
 
 .overline {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	margin-bottom: 1rem;
+	margin-block-end: 1rem;
 }
 
 p {
-	margin-block: 1em;
+	margin-block: var(--unit-d);
+}
+
+.input-wrapper:not(:last-of-type) {
+	margin-block-end: var(--unit-d);
+}
+
+.label--settings {
+	display: block;
+	margin-block-end: var(--unit-f);
+	font-weight: var(--fw-c);
+	text-transform: uppercase;
+}
+
+input,
+select,
+textarea,
+button {
+	display: block;
+	padding: var(--unit-f);
+	width: 100%;
+	border: var(--bdrwidth-a) solid var(--pale);
+	border-radius: var(--radius-b);
+}
+
+button {
+	font-family: var(--ff-primary);
+	background: var(--foreground-color);
+	color: var(--background-color);
+	padding: var(--unit-d);
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -130,11 +162,17 @@ p {
 	flex: 3 3 auto;
 }
 
-// .tuner__section {
-// }
+.t__fieldset:not(:last-of-type) {
+	margin-block-end: var(--unit-b);
+}
 
 .t__settings {
 	flex: 3 3 60%;
+}
+
+.inputs-wrapper {
+	padding-block-end: var(--unit-b);
+	border-block-end: var(--bdrwidth-a) solid var(--pale);
 }
 
 .t__codeareas {
