@@ -5,11 +5,16 @@
 /* -------------------------------------------------------------------------- */
 
 :root {
-	--bright: hsl(0, 0%, 95%);
-	--night: hsl(0, 0%, 25%);
+	--bright: hsl(0, 26%, 96%);
+	--night: hsl(269, 64%, 11%);
+	--pale: hsl(235, 21%, 89%);
+	--accent: hsl(250, 82%, 49%);
 
 	--foreground-color: var(--night);
 	--background-color: var(--bright);
+
+	background: var(--background-color);
+	color: var(--foreground-color);
 
 	--fs-base: 16px;
 	--fs-a: 4.35rem;
@@ -18,7 +23,7 @@
 	--fs-d: var(--fs-base);
 
 	--lh-base: 1.5;
-	--lh-a: 1.2;
+	--lh-a: 1;
 	--lh-b: 1.25;
 	--lh-c: 1.3;
 	--lh-d: var(--lh-base);
@@ -36,17 +41,20 @@
 	--fw-d: var(--lh-base);
 
 	--unit-base: var(--fs-base);
-	--unit-a: calc(var(--unit) * 4);
-	--unit-b: calc(var(--unit) * 2);
-	--unit-c: calc((var(--unit) / 2) * 3);
+	--unit-a: calc(var(--unit-base) * 4);
+	--unit-b: calc(var(--unit-base) * 2);
+	--unit-c: calc((var(--unit-base) / 2) * 3);
 	--unit-d: var(--unit-base);
-	--unit-e: calc(var(--unit) * 0.75);
-	--unit-f: calc(var(--unit) * 0.5);
+	--unit-e: calc(var(--unit-base) * 0.75);
+	--unit-f: calc(var(--unit-base) * 0.5);
 
 	font-family: 'Schibsted Grotesk', 'DM Sans', 'Open Sans', 'Inter', Helvetica, Arial, sans-serif;
 
-	background: var(--background-color);
-	color: var(--foreground-color);
+	--radius-a: 1rem;
+	--radius-b: 0.5rem;
+	--radius-c: 0.25rem;
+
+	--bdrwidth-a: 2px;
 }
 
 * {
@@ -55,6 +63,15 @@
 	padding: 0;
 
 	font-size: var(--fs-base);
+}
+
+img,
+input {
+	display: block;
+}
+
+fieldset {
+	border: none;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -74,19 +91,27 @@
 .typelvl-a {
 	@include typelvl(a);
 	margin-inline-start: -0.035em;
+	margin-bottom: var(--unit-a);
 }
 
 .typelvl-b {
 	@include typelvl(b);
+	margin-bottom: var(--unit-b);
 }
 
 .typelvl-c {
 	@include typelvl(c);
+	margin-bottom: var(--unit-d);
 }
 
 .overline {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-block: 1em;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -94,25 +119,32 @@
 /* -------------------------------------------------------------------------- */
 
 .main {
-	display: flex;
+	margin: var(--unit-a);
 }
 
-.sidebar {
-	width: clamp(200px, 15%, 300px);
-}
+// .sidebar {
+// 	width: clamp(200px, 18%, 300px);
+// }
 
 .tuner-wrapper {
 	flex: 3 3 auto;
 }
 
-.tuner__section {
-	display: flex;
-}
+// .tuner__section {
+// }
 
 .t__settings {
 	flex: 3 3 60%;
 }
 
 .t__codeareas {
+	padding: var(--unit-b);
 	flex: 2 2 40%;
+	background: var(--pale);
+}
+
+/* Code Areas */
+.code-area {
+	display: flex;
+	flex-direction: column;
 }
