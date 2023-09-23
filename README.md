@@ -1,38 +1,30 @@
-# create-svelte
+# CodeTuner
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+It takes some inputs and replaces or surrounds them with the desired characters.
+Each profile has its own sets of replacements that need to be made.
 
-## Creating a project
+## Inspired By
+CodePen example of predecessor to come.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🔖 What I've done and what I'm learning
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+I'm using libraries I'm comfortable with but also want to learn new CMS' and HTML preprocessors.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- I'm way more comfortable settings up the directory structure for new projects!
+- Only dabbled in React from using Sanity.io for my website. Only dabbled in Nuxt for 5 seconds one time. --> Commit to using Svelte/SvelteKit to recreate at least ONE Client Helper I previously made in CodePen.
+- I need to replace strings in a less putrid way --> Knock knock it's RegEx
+- Don't really have time to make a full app, or time to plan out the UI. --> Let's make sure it at least doesn't cause someone to instantly combust on sight. (And learn how stacking components' styles on top of each other actually behaves on delivery, I guess.)
 
-## Developing
+## Goal + Plans
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+I've never worked with a framework of this sort before, and had no familiarity with SPAs. Two birds, one stone: I needed something to help get rid of the repetitive edits I no longer wanted to do, and I wanted to learn how to make something that can do things! Ta-da!
 
-```bash
-npm run dev
+While I don't think I'm going to keep working on this, its local build genuinely helps me day-to-day during a contract job! MVPs amirite?
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
+<br><br>
+<hr>
+<p align="center"><br>☆,｡･:*:･ﾟ’★,｡･:*:･ﾟ’☆<br><br></p><pre> <p align="center"> STAY SAFE AND HAVE FUN<br><br>SAMI &copy; 2023</p></pre>
 
-To create a production version of your app:
 
-```bash
-npm run build
-```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
