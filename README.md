@@ -3,8 +3,12 @@
 It takes some inputs and replaces or surrounds them with the desired characters.
 Each profile has its own sets of replacements that need to be made.
 
-## Inspired By
-CodePen example of predecessor to come.
+## Inspired by 🤡 CHAOS CHAOS 🤡 During Giving Season!
+Our queues were swamped during Q4, and the errors were EXTREMELY repetitive and fairly predictable. Busy work! Menial Tasks! YOU KNOW WHAT THAT MEANS! LET'S SPEND MORE TIME AUTOMATING THE PROBLEM AWAY THAN WE WILL EVER SPEND ACTUALLY DOING THOSE TASKS <sup>as a result of the automation and despite not ever making something like this beforeeeee WOOOOOOOOO</sup>! 
+
+> (Except in this case, it was actually totally worth it. It cut down production time for this particular client into a FIFTH (1/5) of what it was before. Yayyyyyy!)
+
+Check out an example of it **[here via CodePen](www.google.com)**!
 
 ## 🔖 What I've done and what I'm learning
 
